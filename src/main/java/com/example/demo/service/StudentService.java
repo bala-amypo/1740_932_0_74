@@ -1,4 +1,7 @@
 class StudentService {
     @Autowired
-    private 
+    private  StudentRepository respo;
+      public  StudentEntity getstudents(){
+        return  respo.findAll();
+    }
 }

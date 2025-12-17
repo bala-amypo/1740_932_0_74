@@ -1,7 +1,9 @@
 @RestController
 class StudentController{
     @Autowired
-    private 
+    private StudentService service;
     @GetMapping("/student")
-    public Student
+    public  StudentEntity getstudents(){
+        return service.getstudents();
+    }
 }
