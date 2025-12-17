@@ -19,5 +19,6 @@ public class StudentController {
     public StudentEntity addStudents(@RequestBody StudentEntity student){
         return ser.addStudents(student);
     }
+    @GetMapping("/getstudents")
     
 }
