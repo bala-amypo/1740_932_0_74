@@ -17,17 +17,23 @@ public class StudentEntity {
     public String getName(){
         return name;
     }
-    public void set(String name){
+    public void setEmail(String email){
+        this.email=email;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public void setCgpa(float cgpa){
+        this.cgpa=cgpa;
+    }
+    public float getCgpa(){
+        return cgpa;
+    }
+    StudentEntity(){}
+    StudentEntity(Long id, String name,String email,float cgpa){
+        this.id=id;
         this.name=name;
-    }
-    public String getName(){
-        return name;
-    }
-    public void setName(String name){
-        this.name=name;
-    }
-    public String getName(){
-        return name;
+        this.email=em
     }
 
 }
