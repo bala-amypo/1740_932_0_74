@@ -33,7 +33,7 @@ public class StudentEntity {
     StudentEntity(Long id, String name,String email,float cgpa){
         this.id=id;
         this.name=name;
-        this.email=em
+        this.email=email;
     }
 
 }
