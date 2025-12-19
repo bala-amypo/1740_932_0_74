@@ -5,6 +5,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import lombok.Data;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Notblank;
+import jakarta.validation.constraints.Max;
 
 @Data
 @Entity
@@ -15,9 +18,9 @@ public class StudentEntity {
     private Long id;
     @Notblank
     private String name;
-    @email
-    @(Notnull=false)
+    @Email
     private String email;
+    @Max(value=10)
     private float cgpa;
 
     // public StudentEntity(Long id, String name, String email, float cgpa) {
