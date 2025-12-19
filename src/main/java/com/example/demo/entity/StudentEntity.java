@@ -20,7 +20,7 @@ public class StudentEntity {
     private String name;
     @Email(message="Enter the correct format of email.")
     private String email;
-    @Max(value=10)
+    @Size(min=0 ,max=10)
     private float cgpa;
 
     // public StudentEntity(Long id, String name, String email, float cgpa) {
