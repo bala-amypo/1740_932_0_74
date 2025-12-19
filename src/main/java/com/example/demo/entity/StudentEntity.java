@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import lombok.Data;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Notblank;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Max;
 
 @Data
@@ -16,7 +16,7 @@ public class StudentEntity {
     @Id
     @GeneratedValue
     private Long id;
-    @Notblank
+    @NotBlank
     private String name;
     @Email
     private String email;
