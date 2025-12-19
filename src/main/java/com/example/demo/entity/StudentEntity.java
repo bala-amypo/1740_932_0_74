@@ -16,9 +16,9 @@ public class StudentEntity {
     @Id
     @GeneratedValue
     private Long id;
-    @NotBlank
+    @NotBlank(message="Name not be Empty.")
     private String name;
-    @Email
+    @Email(message="Enter the correct format of email.")
     private String email;
     @Max(value=10)
     private float cgpa;
