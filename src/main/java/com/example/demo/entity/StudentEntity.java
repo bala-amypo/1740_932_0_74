@@ -13,7 +13,9 @@ public class StudentEntity {
     @Id
     @GeneratedValue
     private Long id;
+    @Notblank
     private String name;
+    @Email
     private String email;
     private float cgpa;
 
