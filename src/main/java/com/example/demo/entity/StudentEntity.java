@@ -15,7 +15,8 @@ public class StudentEntity {
     private Long id;
     @Notblank
     private String name;
-    @Email
+    @email
+    @(Notnull=false)
     private String email;
     private float cgpa;
 
